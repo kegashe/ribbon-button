@@ -1,12 +1,7 @@
-import { App, fuzzySearch, FuzzySuggestModal, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { App, Plugin, PluginSettingTab, Setting } from 'obsidian';
 
 interface PluginSettings {
 	folder: string;
-}
-
-interface Search {
-    openGlobalSearch(_: string): void;
-    getGlobalSearchQuery(): string;
 }
 
 const DEFAULT_SETTINGS: PluginSettings = {
